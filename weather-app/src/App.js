@@ -1,5 +1,10 @@
 import React from "react";
 
+const api = {
+  key: "e8113088e3bc77898249bcb4125303ff",
+  base: "https://api.openweathermap.org/data/2.5/"
+}
+
 function App() {
 
   const dateBuilder = (d) => {
@@ -14,10 +19,6 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
   return (
-<<<<<<< Updated upstream
-    <div className="App">
-      <h1>Hello world</h1>
-=======
     <div className="app">
       <main>
         <div className="search-box">
@@ -32,7 +33,6 @@ function App() {
           <div className="data">{dateBuilder(new Date())}</div>
         </div>
       </main>
->>>>>>> Stashed changes
     </div>
   );
 }
